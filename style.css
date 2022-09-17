@@ -1,0 +1,804 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('https://mcdn.wallpapersafari.com/medium/76/3/p04Aoq.jpg');
+    background-position: center;
+    font-family: sans-serif;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+header {
+    width: 100%;
+    display: inline-block;
+}
+.user {
+    display: inline-block;
+    align-content: right;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 8%;
+}
+.nav-bar {
+    display: inline-flex;
+    list-style: none;
+    width: 100%;
+    margin-top: 5px;
+}
+.logo {
+    display: inline-block;
+    align-content: left;
+    width: 120px;
+    height: 60px;
+}
+
+.bar {
+    width: 100%;
+}
+.menu-bar {
+    background-color: none;
+    text-align: center;
+    width: 100%;
+}
+
+ .menu-bar ul {
+    display: inline-flex;
+    list-style: none;
+}
+
+.menu-bar ul li {
+    width: 16vw;
+    padding: 5px;
+    margin-top: 5px;
+
+}
+@media only screen and (max-width: 6000px) and (min-width: 451px) {
+    
+    .menu-bar ul li  a {
+        text-decoration: none;
+        color: #0d05f2;
+        text-shadow: 0 0 2px #173aff;
+        font-family: 'Times New Roman', Currier;
+        font-size: 17px;
+    /*    color: #052efa;*/
+    }
+
+    .menu-bar ul li a:hover {
+        background: #0d05f2;
+        color: white;
+        box-shadow: 0 0 20px #052efa, 0 0 20px #052efa, 0 0 20px #052efa, 0 0 20px #052efa;
+        border-radius: 5px;
+    }
+
+
+    .sub-menu {
+        display: none;
+    }
+
+
+    .menu-bar ul li:hover .sub-menu {
+        display: block;
+        position: absolute;
+        background: transparent;
+        margin-left: -15px;
+        margin-left: 10px;
+        margin-top: 5px;
+        border-radius: 5px;
+    }
+
+    .menu-bar ul li:hover .sub-menu ul {
+        display: inline-block;
+        width: 250px;
+        height: auto;
+        color: white;
+
+    }
+
+    .menu-bar ul li:hover .sub-menu ul li {
+        width: 250px;
+        text-align: left;
+        border-bottom: 1.5px double aqua;
+    }
+
+    .menu-bar ul li:hover .sub-menu ul li a:hover{
+        color: solid white;
+    }
+
+    .fa-angle-right {
+        float: right;
+        color: blue;
+    }
+
+    .infrastructure-menu {
+        display: none;
+    }
+
+    .menu-bar ul li:hover .sub-menu ul li:hover .infrastructure-menu  {
+        display: inline-block;
+        position: absolute;
+        background: transparent;
+        margin-left: 85px;
+        margin-top: -10px;
+        border-radius: 5px;
+
+    }
+    .menu-bar ul li:hover .sub-menu ul li:hover .infrastructure-menu ul {
+        display: inline-block;
+        width: 150px;
+        height: auto;
+        color: white;
+
+    }
+
+    .menu-bar ul li:hover .sub-menu ul li:hover .infrastructure-menu ul li {
+        width: 150px;
+        text-align: left;
+        border-bottom: 1.5px double aqua;
+    }
+
+    .menu-bar ul li:hover .sub-menu ul li:hover .infrastructure-menu ul li a:hover {
+        color: white;
+    }
+
+
+
+
+
+
+
+
+    .environmental-menu {
+        display: none;
+    }
+
+    .menu-bar ul li:hover .sub-menu ul li:hover .environmental-menu  {
+        display: inline-block;
+        position: absolute;
+        background: transparent;
+        margin-left: 75px;
+        margin-top: -10px;
+        border-radius: 5px;
+
+    }
+    .menu-bar ul li:hover .sub-menu ul li:hover .environmental-menu ul {
+        display: inline-block;
+        width: 280px;
+        height: auto;
+        color: white;
+
+    }
+
+    .menu-bar ul li:hover .sub-menu ul li:hover .environmental-menu ul li {
+        width: 260px;
+        text-align: left;
+        border-bottom: 1.5px double aqua;
+    }
+
+    .menu-bar ul li:hover .sub-menu ul li:hover .environmental-menu ul li a:hover {
+        color: white;
+    }
+
+
+
+
+    .promotion-menu {
+        display: none;
+    }
+
+    .menu-bar ul li:hover .sub-menu ul li:hover .promotion-menu  {
+        display: inline-block;
+        position: absolute;
+        background: transparent;
+        margin-left: 100px;
+        margin-top: -10px;
+        border-radius: 5px;
+
+    }
+    .menu-bar ul li:hover .sub-menu ul li:hover .promotion-menu ul {
+        display: inline-block;
+        width: 100px;
+        height: auto;
+        color: white;
+
+    }
+
+    .menu-bar ul li:hover .sub-menu ul li:hover .promotion-menu ul li {
+        width: 100px;
+        text-align: left;
+        border-bottom: 1.5px double aqua;
+    }
+
+    .menu-bar ul li:hover .sub-menu ul li:hover .promotion-menu ul li a:hover {
+        color: white;
+    }
+
+
+
+    .service-menu {
+        display: none;
+    }
+
+    .menu-bar ul li:hover .sub-menu ul li:hover .service-menu  {
+        display: inline-block;
+        position: absolute;
+        background: transparent;
+        margin-left: 118px;
+        margin-top: -10px;
+        border-radius: 5px;
+
+    }
+    .menu-bar ul li:hover .sub-menu ul li:hover .service-menu ul {
+        display: inline-block;
+        width: 150px;
+        height: auto;
+        color: white;
+
+    }
+
+    .menu-bar ul li:hover .sub-menu ul li:hover .service-menu ul li {
+        width: 150px;
+        text-align: left;
+        border-bottom: 1.5px double aqua;
+    }
+
+    .menu-bar ul li:hover .sub-menu ul li:hover .service-menu ul li a:hover {
+        color: white;
+    }
+
+
+
+    .corporate-menu {
+        display: none;
+    }
+
+    .menu-bar ul li:hover .sub-menu ul li:hover .corporate-menu  {
+        display: inline-block;
+        position: absolute;
+        background: transparent;
+        margin-left: 25px;
+        margin-top: -10px;
+        border-radius: 5px;
+
+    }
+    .menu-bar ul li:hover .sub-menu ul li:hover .corporate-menu ul {
+        display: inline-block;
+        width: 40px;
+        height: auto;
+        color: white;
+
+    }
+
+    .menu-bar ul li:hover .sub-menu ul li:hover .corporate-menu ul li {
+        width: 40px;
+        text-align: left;
+        border-bottom: 1.5px double aqua;
+    }
+
+    .menu-bar ul li:hover .sub-menu ul li:hover .corporate-menu ul li a:hover {
+        color: white;
+    }
+
+
+    /*Login page desining started from here*/
+
+    .left-column {
+        background: green;
+        display: inline-block;
+        width: 20%;
+    }
+
+
+
+    .right-column {
+        background: red;
+        display: inline-block;
+        width: 80%;
+    }
+
+
+
+}
+
+/*Resposivness for mobile under 300px*/
+
+@media only screen and (max-width: 300px) and (min-width: 10px) {
+    .menu-bar ul li  a {
+        text-decoration: none;
+        color: #0d05f2;
+        text-shadow: 0 0 2px #173aff;
+        font-family: 'Times New Roman', Currier;
+        font-size: 7px;
+    /*    color: #052efa;*/
+    }
+
+    .menu-bar ul li a:hover {
+        background: #0d05f2;
+        color: white;
+        box-shadow: 0 0 20px #052efa, 0 0 20px #052efa, 0 0 20px #052efa, 0 0 20px #052efa;
+        border-radius: 5px;
+    }
+
+
+    .sub-menu {
+        display: none;
+    }
+
+
+    .menu-bar ul li:hover .sub-menu {
+        display: block;
+        position: absolute;
+        background: transparent;
+        margin-left: 10px;
+        margin-top: 5px;
+        border-radius: 5px;
+    }
+
+    .menu-bar ul li:hover .sub-menu ul {
+        display: inline-block;
+        width: 120px;
+        height: auto;
+        color: white;
+
+    }
+
+    .menu-bar ul li:hover .sub-menu ul li {
+        width: 120px;
+        text-align: left;
+        border-bottom: 1.5px double aqua;
+    }
+
+    .menu-bar ul li:hover .sub-menu ul li a:hover{
+        color: solid white;
+    }
+
+    .fa-angle-right {
+        float: right;
+        color: blue;
+    }
+
+    .infrastructure-menu {
+        display: none;
+    }
+
+    .menu-bar ul li:hover .sub-menu ul li:hover .infrastructure-menu  {
+        display: inline-block;
+        position: absolute;
+        background: transparent;
+        margin-left: 50px;
+        margin-top: -10px;
+        border-radius: 5px;
+
+    }
+    .menu-bar ul li:hover .sub-menu ul li:hover .infrastructure-menu ul {
+        display: inline-block;
+        width: 70px;
+        height: auto;
+        color: white;
+
+    }
+
+    .menu-bar ul li:hover .sub-menu ul li:hover .infrastructure-menu ul li {
+        width: 70px;
+        text-align: left;
+        border-bottom: 1.5px double aqua;
+    }
+
+    .menu-bar ul li:hover .sub-menu ul li:hover .infrastructure-menu ul li a:hover {
+        color: white;
+    }
+
+
+
+
+
+
+
+
+    .environmental-menu {
+        display: none;
+    }
+
+    .menu-bar ul li:hover .sub-menu ul li:hover .environmental-menu  {
+        display: inline-block;
+        position: absolute;
+        background: transparent;
+        margin-left: 45px;
+        margin-top: -10px;
+        border-radius: 5px;
+
+    }
+    .menu-bar ul li:hover .sub-menu ul li:hover .environmental-menu ul {
+        display: inline-block;
+        width: 120px;
+        height: auto;
+        color: white;
+
+    }
+
+    .menu-bar ul li:hover .sub-menu ul li:hover .environmental-menu ul li {
+        width: 120px;
+        text-align: left;
+        border-bottom: 1.5px double aqua;
+    }
+
+    .menu-bar ul li:hover .sub-menu ul li:hover .environmental-menu ul li a:hover {
+        color: white;
+    }
+
+
+
+
+    .promotion-menu {
+        display: none;
+    }
+
+    .menu-bar ul li:hover .sub-menu ul li:hover .promotion-menu  {
+        display: inline-block;
+        position: absolute;
+        background: transparent;
+        margin-left:55px;
+        margin-top: -10px;
+        border-radius: 5px;
+
+    }
+    .menu-bar ul li:hover .sub-menu ul li:hover .promotion-menu ul {
+        display: inline-block;
+        width: 60px;
+        height: auto;
+        color: white;
+
+    }
+
+    .menu-bar ul li:hover .sub-menu ul li:hover .promotion-menu ul li {
+        width: 60px;
+        text-align: left;
+        border-bottom: 1.5px double aqua;
+    }
+
+    .menu-bar ul li:hover .sub-menu ul li:hover .promotion-menu ul li a:hover {
+        color: white;
+    }
+
+
+
+    .service-menu {
+        display: none;
+    }
+
+    .menu-bar ul li:hover .sub-menu ul li:hover .service-menu  {
+        display: inline-block;
+        position: absolute;
+        background: transparent;
+        margin-left: 60px;
+        margin-top: -10px;
+        border-radius: 5px;
+
+    }
+    .menu-bar ul li:hover .sub-menu ul li:hover .service-menu ul {
+        display: inline-block;
+        width: 70px;
+        height: auto;
+        color: white;
+
+    }
+
+    .menu-bar ul li:hover .sub-menu ul li:hover .service-menu ul li {
+        width: 70px;
+        text-align: left;
+        border-bottom: 1.5px double aqua;
+    }
+
+    .menu-bar ul li:hover .sub-menu ul li:hover .service-menu ul li a:hover {
+        color: white;
+    }
+
+
+
+    .corporate-menu {
+        display: none;
+    }
+
+    .menu-bar ul li:hover .sub-menu ul li:hover .corporate-menu  {
+        display: inline-block;
+        position: absolute;
+        background: transparent;
+        margin-left: 25px;
+        margin-top: -10px;
+        border-radius: 5px;
+
+    }
+    .menu-bar ul li:hover .sub-menu ul li:hover .corporate-menu ul {
+        display: inline-block;
+        width: 40px;
+        height: auto;
+        color: white;
+
+    }
+
+    .menu-bar ul li:hover .sub-menu ul li:hover .corporate-menu ul li {
+        width: 40px;
+        text-align: left;
+        border-bottom: 1.5px double aqua;
+    }
+
+    .menu-bar ul li:hover .sub-menu ul li:hover .corporate-menu ul li a:hover {
+        color: white;
+    }
+
+
+    /*Login page desining started from here*/
+
+    .left-column {
+        background: green;
+        display: inline-block;
+        width: 20%;
+    }
+
+
+
+    .right-column {
+        background: red;
+        display: inline-block;
+    width: 80%;
+    }
+
+}
+
+
+/*Resposivness for mobile under 450px*/
+
+@media only screen and (max-width: 450px) and (min-width: 300px) {
+    .menu-bar ul li  a {
+        text-decoration: none;
+        color: #0d05f2;
+        text-shadow: 0 0 2px #173aff;
+        font-family: 'Times New Roman', Currier;
+        font-size: 10px;
+    /*    color: #052efa;*/
+    }
+
+    .menu-bar ul li a:hover {
+        background: #0d05f2;
+        color: white;
+        box-shadow: 0 0 20px #052efa, 0 0 20px #052efa, 0 0 20px #052efa, 0 0 20px #052efa;
+        border-radius: 5px;
+    }
+
+
+    .sub-menu {
+        display: none;
+    }
+
+
+    .menu-bar ul li:hover .sub-menu {
+        display: block;
+        position: absolute;
+        background: transparent;
+        margin-left: 10px;
+        margin-top: 5px;
+        border-radius: 5px;
+    }
+
+    .menu-bar ul li:hover .sub-menu ul {
+        display: inline-block;
+        width: 150px;
+        height: auto;
+        color: white;
+
+    }
+
+    .menu-bar ul li:hover .sub-menu ul li {
+        width: 150px;
+        text-align: left;
+        border-bottom: 1.5px double aqua;
+    }
+
+    .menu-bar ul li:hover .sub-menu ul li a:hover{
+        color: solid white;
+    }
+
+    .fa-angle-right {
+        float: right;
+        color: blue;
+    }
+
+    .infrastructure-menu {
+        display: none;
+    }
+
+    .menu-bar ul li:hover .sub-menu ul li:hover .infrastructure-menu  {
+        display: inline-block;
+        position: absolute;
+        background: transparent;
+        margin-left: 50px;
+        margin-top: -10px;
+        border-radius: 5px;
+
+    }
+    .menu-bar ul li:hover .sub-menu ul li:hover .infrastructure-menu ul {
+        display: inline-block;
+        width: 100px;
+        height: auto;
+        color: white;
+
+    }
+
+    .menu-bar ul li:hover .sub-menu ul li:hover .infrastructure-menu ul li {
+        width: 100px;
+        text-align: left;
+        border-bottom: 1.5px double aqua;
+    }
+
+    .menu-bar ul li:hover .sub-menu ul li:hover .infrastructure-menu ul li a:hover {
+        color: white;
+    }
+
+
+
+
+
+
+
+
+    .environmental-menu {
+        display: none;
+    }
+
+    .menu-bar ul li:hover .sub-menu ul li:hover .environmental-menu  {
+        display: inline-block;
+        position: absolute;
+        background: transparent;
+        margin-left: 45px;
+        margin-top: -10px;
+        border-radius: 5px;
+
+    }
+    .menu-bar ul li:hover .sub-menu ul li:hover .environmental-menu ul {
+        display: inline-block;
+        width: 160px;
+        height: auto;
+        color: white;
+
+    }
+
+    .menu-bar ul li:hover .sub-menu ul li:hover .environmental-menu ul li {
+        width: 160px;
+        text-align: left;
+        border-bottom: 1.5px double aqua;
+    }
+
+    .menu-bar ul li:hover .sub-menu ul li:hover .environmental-menu ul li a:hover {
+        color: white;
+    }
+
+
+
+
+    .promotion-menu {
+        display: none;
+    }
+
+    .menu-bar ul li:hover .sub-menu ul li:hover .promotion-menu  {
+        display: inline-block;
+        position: absolute;
+        background: transparent;
+        margin-left:55px;
+        margin-top: -10px;
+        border-radius: 5px;
+
+    }
+    .menu-bar ul li:hover .sub-menu ul li:hover .promotion-menu ul {
+        display: inline-block;
+        width: 60px;
+        height: auto;
+        color: white;
+
+    }
+
+    .menu-bar ul li:hover .sub-menu ul li:hover .promotion-menu ul li {
+        width: 60px;
+        text-align: left;
+        border-bottom: 1.5px double aqua;
+    }
+
+    .menu-bar ul li:hover .sub-menu ul li:hover .promotion-menu ul li a:hover {
+        color: white;
+    }
+
+
+
+    .service-menu {
+        display: none;
+    }
+
+    .menu-bar ul li:hover .sub-menu ul li:hover .service-menu  {
+        display: inline-block;
+        position: absolute;
+        background: transparent;
+        margin-left: 65px;
+        margin-top: -10px;
+        border-radius: 5px;
+
+    }
+    .menu-bar ul li:hover .sub-menu ul li:hover .service-menu ul {
+        display: inline-block;
+        width: 90px;
+        height: auto;
+        color: white;
+
+    }
+
+    .menu-bar ul li:hover .sub-menu ul li:hover .service-menu ul li {
+        width: 90px;
+        text-align: left;
+        border-bottom: 1.5px double aqua;
+    }
+
+    .menu-bar ul li:hover .sub-menu ul li:hover .service-menu ul li a:hover {
+        color: white;
+    }
+
+
+
+    .corporate-menu {
+        display: none;
+    }
+
+    .menu-bar ul li:hover .sub-menu ul li:hover .corporate-menu  {
+        display: inline-block;
+        position: absolute;
+        background: transparent;
+        margin-left: 16px;
+        margin-top: -10px;
+        border-radius: 5px;
+
+    }
+    .menu-bar ul li:hover .sub-menu ul li:hover .corporate-menu ul {
+        display: inline-block;
+        width: 40px;
+        height: auto;
+        color: white;
+
+    }
+
+    .menu-bar ul li:hover .sub-menu ul li:hover .corporate-menu ul li {
+        width: 40px;
+        text-align: left;
+        border-bottom: 1.5px double aqua;
+    }
+
+    .menu-bar ul li:hover .sub-menu ul li:hover .corporate-menu ul li a:hover {
+        color: white;
+    }
+
+
+    /*Login page desining started from here*/
+
+    .left-column {
+        background: green;
+        display: inline-block;
+        width: 20%;
+    }
+
+
+
+    .right-column {
+        background: red;
+        display: inline-block;
+        width: 80%;
+    }
+
+
+
+
+    
+    
+    
+}
+
